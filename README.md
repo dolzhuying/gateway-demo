@@ -12,6 +12,7 @@ curl -v http://localhost:8090/docker-echo-primes
 测试样例：
 ```
 # echo
+
 curl -v  POST http://localhost:8090/echo/echo \
     -H "Content-Type: application/json" \
     -d '{"message": "Hello, Actix!"}'
@@ -20,5 +21,4 @@ curl -v  POST http://localhost:8090/echo/echo \
 curl -X POST http://localhost:<port>/echo/uppercase -d "hello"
 curl -X POST http://localhost:<port>/echo/primes -d "10017221"
 
-curl -v -X POST http://localhost:8050/echo  -d "hello"
 ```
